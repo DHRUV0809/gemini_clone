@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 # Load environment variables
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 model = genai.GenerativeModel("gemini-pro")
 
@@ -43,3 +43,4 @@ if user_input:
 
     except Exception as e:
         st.error(f"Error: {e}")
+
